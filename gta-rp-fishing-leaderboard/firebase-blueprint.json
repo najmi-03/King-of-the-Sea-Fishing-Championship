@@ -1,0 +1,48 @@
+{
+  "entities": {
+    "participants": {
+      "title": "Participant",
+      "description": "Fisher participants in the tournament",
+      "type": "object",
+      "properties": {
+        "cid": { "type": "string" },
+        "character_name": { "type": "string" },
+        "total_points": { "type": "number" },
+        "total_fish_count": { "type": "number" },
+        "highest_rarity": { "type": "string" },
+        "highest_rarity_weight": { "type": "number" },
+        "legendary_count": { "type": "number" },
+        "rare_count": { "type": "number" },
+        "updated_at": { "type": "number" }
+      },
+      "required": ["cid", "character_name", "total_points", "total_fish_count"]
+    },
+    "submissions": {
+      "title": "Submission",
+      "description": "Catch reports submitted by players for verification",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "cid": { "type": "string" },
+        "character_name": { "type": "string" },
+        "status": { "type": "string" },
+        "created_at": { "type": "number" }
+      },
+      "required": ["cid", "character_name", "status", "created_at"]
+    },
+    "logs": {
+      "title": "CatchLog",
+      "description": "Verified catch logs history",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "cid": { "type": "string" },
+        "fish_category": { "type": "string" },
+        "quantity": { "type": "number" },
+        "points_earned": { "type": "number" },
+        "created_at": { "type": "number" }
+      },
+      "required": ["cid", "fish_category", "points_earned", "created_at"]
+    }
+  }
+}

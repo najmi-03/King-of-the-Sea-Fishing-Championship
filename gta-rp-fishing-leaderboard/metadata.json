@@ -1,0 +1,6 @@
+{
+  "name": "King of the Sea: Fishing Championship",
+  "description": "Live leaderboard, cover page, and admin panel for King of the Sea: Fishing Championship.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
